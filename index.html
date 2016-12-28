@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html>
   	<head>
-		<title>Diff21</title>
+		<title>ParrotTrouble</title>
  	  	<meta charset="utf-8">
  	  	<meta name="viewport" content="width=device-width, initial-scale=1">
  	  	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
  	</head>
  	 <body>
- 		<!--Here Starts Form-->
- 		<section class="contact section-fullscreen flex-vertical-center">	
+ 		<!--Aqui empieza el formulario -->
+ 		<section class="">	
 			<div class="container">
 				<br>
 				<div class="form section-md">
 					<div class="col-md-offset-4 cold-md-8">
-						<h2 class="">Hallar diferencia de 21 con cualquier otro número</h2>
-						<p class="">Completa el formulario para averiguarlo</p>
+						<h2 class="">ParrotTrouble</h2>
+						<p class="">Completa el formulario para saber si puedes estas en problemas</p>
 					</div><br><br>
 					<form action="" class="">
 						<div class="form-group">
-							<label for="numberEntered">Escribe un numero:</label>
+							<label for="day" class="control-label col-md-offset-1 col-md-3">¿Es de madrugada o ya esta anocheciendo?</label>
 							<div class="col-md-5">
-								<form action="action_page.php">
-									<input id="numberEntered" type="number" placeholder="0" onChange="calcular()">
+								<form action="">
+								    <input type="checkbox" name="Check" id="antesSieteAM" checked>Horario antes de las 7 am <br>
+								 	<input type="checkbox" name="Check" id="despuesOchoPM">Horario después de las 8 pm 
+								  <br><br>
 								</form>
 							</div>	
 						</div>
 						<div class="form-group">
+							<label class="control-label col-md-offset-1 col-md-3" for="vacation">¿El loro esta hablando?</label>
+							<div class="col-md-5">
+								<form action="">
+								 	<input type="radio" name="respuesta" id="siHablando">Si<br>
+  									<input type="radio" name="respuesta" id="noHablando">No
+								 	<p>Dale click al botón "Consultar" para saber si estas en problemas</p>
+								 	<p id="demo"></p>
+								 	<button onclick="consultar()" class="btn btn-default">Consultar</button>
+								 	<h4 class="text-info">Resultado:</h4>
+									<div id="salida" style="font-size:50px;">-</div>
+								  	<br><br>
+								</form>	
+							</div>
+						</div>
+						<div class="form-group">
 							<div class="col-md-offset-4 col-md-4">
-								<button onclick="calcular()" class="btn btn-default">Consultar</button>
+								<input type="" name="">
 							</div>
 						</div>	
-						<div class="form-group col-md-offset-4 col-md-4">
-							<h4 class="text-info">Resultado:</h4>
-							<div id="salida" style="font-size:50px;">-</div>
-							<h4 class="text-info"></h4>
+						<div class="col-md-offset-4 col-md-4">
+							
 						</div>				
 					</form>
+				
 				</div>
 			</div>		
 		</section>
+
 		<script type="text/javascript" src="main.js"></script>
   	</body>
 </html>
