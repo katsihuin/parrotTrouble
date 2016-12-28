@@ -7,12 +7,12 @@
  	  	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
  	</head>
  	 <body>
- 		<!--Aqui empieza el formulario -->
- 		<section class="">	
+ 		<!--Aqui empieza formulario -->
+ 		<section class="formulario">	
 			<div class="container">
 				<br>
 				<div class="form section-md">
-					<div class="col-md-offset-4 cold-md-8">
+					<div class="text-center">
 						<h2 class="">ParrotTrouble</h2>
 						<p class="">Completa el formulario para saber si puedes estas en problemas</p>
 					</div><br><br>
@@ -21,8 +21,8 @@
 							<label for="day" class="control-label col-md-offset-1 col-md-3">¿Es de madrugada o ya esta anocheciendo?</label>
 							<div class="col-md-5">
 								<form action="">
-								    <input type="checkbox" name="Check" id="antesSieteAM" checked>Horario antes de las 7 am <br>
-								 	<input type="checkbox" name="Check" id="despuesOchoPM">Horario después de las 8 pm 
+								    <input type="radio" name="Check" id="antesSieteAM">Horario antes de las 7 am <br>
+								 	<input type="radio" name="Check" id="despuesOchoPM">Horario después de las 8 pm 
 								  <br><br>
 								</form>
 							</div>	
@@ -31,31 +31,25 @@
 							<label class="control-label col-md-offset-1 col-md-3" for="vacation">¿El loro esta hablando?</label>
 							<div class="col-md-5">
 								<form action="">
-								 	<input type="radio" name="respuesta" id="siHablando">Si<br>
-  									<input type="radio" name="respuesta" id="noHablando">No
+								 	<input type="radio" name="respuesta" id="siHablando">Si <br>
+  									<input type="radio" name="respuesta" id="noHablando">No <br><br>
 								 	<p>Dale click al botón "Consultar" para saber si estas en problemas</p>
 								 	<p id="demo"></p>
 								 	<button onclick="consultar()" class="btn btn-default">Consultar</button>
 								 	<h4 class="text-info">Resultado:</h4>
-									<div id="salida" style="font-size:50px;">-</div>
+									<div id="salida" style="font-size:20px;">-</div>
 								  	<br><br>
 								</form>	
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="col-md-offset-4 col-md-4">
-								<input type="" name="">
-							</div>
-						</div>	
 						<div class="col-md-offset-4 col-md-4">
-							
+							<a href="" class="unstyled">link del ejercicio en github</a>
 						</div>				
 					</form>
-				
 				</div>
 			</div>		
 		</section>
-
+		<!--Aqui termina formulario -->
 		<script type="text/javascript" src="main.js"></script>
   	</body>
 </html>

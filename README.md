@@ -4,17 +4,17 @@
 
 ##Declaración de Variables
 
-- talking
 - hora
+- habla
 
 ##Ingreso de Datos
 
-- Obtener el rango de hora
+- Obtener el horario
 - Saber si el loro esta hablando o no 
 
 ##Proceso
 
- - Si el pajaro esta hablando y la hora es menor que 7 o la hora es mayor que 20 
+ - Si el loro esta hablando y la hora es menor que 7 o la hora es mayor que 20 
         - Mostrar verdadero //estamos en problemas
  - Sino 
         - Mostrar falso //No estamos en problemas
