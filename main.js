@@ -5,7 +5,7 @@ function consultar() {
     
     if (siHablando.checked && (amanecer.checked || anochecer.checked))
     {
-        //En problemas
+        //Si esta en problemas
         salida.innerHTML = "Si estas en problemas";
     } else {
         //No hay problema
